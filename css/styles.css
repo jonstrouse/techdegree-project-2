@@ -1,0 +1,348 @@
+/* Default Styles; */
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #f7f7f7;
+  font-family: Quicksand;
+  text-align: center;
+}
+h1 {
+  font-family: 'Russo+One', sans-serif;
+  font-size: 1.5em;
+  text-transform: uppercase;;
+}
+h1, h2 {
+  color: orange;
+}
+p {
+  padding: 2em 0;
+  margin: auto;
+  width: 80%;
+  letter-spacing: .05em;
+  line-height: 1.4em;
+}
+ul {
+  list-style: none;
+  max-width: 900px;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+li a:hover {
+  color: orange;
+  text-shadow: .5px .5px 2px orange;
+}
+footer {
+  width: 100%;
+}
+
+
+/* Header Styles */
+.header ul {
+  padding-left: 0;
+  margin: 0 auto;
+  width: 60%;
+  max-width: 300px;
+}
+.header {
+  width: 100%;
+  height: auto;
+  background-color: #f7f7f7;
+}
+.header h1 {
+  font-size: 2em;
+  text-shadow: none;
+  margin: 0;
+  padding: 1em 0;
+}
+.header img {
+  box-shadow: -2px 2px 3px slategrey;
+  width: 50%;
+  margin: 30px 0 10px;
+}
+.nav li {
+  background-color: white;
+  text-transform: uppercase;
+  padding: .3em 1em;
+  font-size: 1.2em;
+  margin: .5em auto;
+}
+.title {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #444444;
+  width: 100%;
+}
+
+
+/* Main Content Styles */
+#content h1 {
+  font-family: 'Russo+One', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.4em;
+  margin: 0;
+}
+#content {
+  width: 100%;
+  padding: 3em .2em 1em;
+  background-color: white;
+}
+.col {
+  margin: 50px auto;
+  width: 90%;
+  max-width: 450px;
+  height: auto;
+}
+.col p {
+  padding: 0;
+  width: 100%;
+}
+.col h2 {
+  font-family: 'Russo+One', sans-serif;
+}
+.col img {
+  max-width: 100%;
+}
+
+#skills {
+  margin: auto;
+  clear: both;
+  padding: 3em 0;
+  background-color: slategrey;
+}
+.skill h2 {
+  display: block;
+  margin: auto;
+  width: 175px;
+  color: white;
+  padding: .4em;
+  border-radius: 20px;
+  background-color: orange;
+}
+.skill h4 {
+  font-size: .65em;
+  width: 80px;
+  top: 15px;
+  right: -50px;
+}
+.skill-level {
+  position: absolute;
+  padding: .3em;
+  background-color: skyblue;
+  border: 2px solid white;
+  border-radius: 0 20px 20px;
+  width: 120px;
+  top: 10px;
+  right: -95px;
+}
+#beginner {
+  background-color: limegreen;
+}
+#skills h1 {
+  margin-bottom: 2em;
+  color: white;
+}
+#skills p {
+  margin: 2em 0;
+  color: white;
+}
+
+.skill {
+  position: relative;
+  width: 200px;
+  margin: auto;
+}
+
+
+/* Footer Syles */
+footer h1 {
+  margin: 2em 0 0;
+  font-family: 'Russo+One', sans-serif;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+footer p {
+  padding: .5em 0;
+}
+
+.footer-menu {
+  width: 80%;
+  margin: 2em auto;
+  padding: 1.2em 0;
+  border-top: 2px solid lightgrey;
+}
+.footer-home,
+.footer-portfolio,
+.footer-skills,
+.footer-contact {
+  display: none;
+}
+.footer-name,
+.footer-top {
+  text-transform: none;
+  font-size: 1em;
+}
+.footer-name {
+  float: left;
+}
+.footer-top {
+  float: right;
+}
+.info {
+  font-weight: bold;
+  letter-spacing: normal;
+  padding-left: 1em;
+}
+
+
+/* Media Queries */
+@media screen and (min-width: 768px) {
+
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .header {
+    clear: both;
+    max-width: 1000px;
+    margin: auto;
+  }
+  .header h1 {
+    width: 100%;
+  }
+  .header ul {
+    margin: 0 auto;
+    max-width: none;
+  }
+  .nav li {
+    background-color: inherit;
+    display: inline-block;
+    padding: 0 .5em;
+  }
+  .header p {
+    text-align: left;
+    padding: 2em;
+    width: 60%;
+    float: left
+  }
+  .header img {
+    margin: 2em 2em 2em 0;
+    width: 35%;
+    float: right;
+  }
+  main, #content {
+    clear: both;
+    margin: auto;
+    max-width: 1000px;
+  }
+   main h1 {
+    padding-top: 1em;
+  }
+  .col {
+    max-width: 50%;
+    padding: 0 1em;
+    float: left;
+  }
+  #first,
+  #second {
+    width: 50%;
+  }
+  #third {
+    clear: both;
+    width: 100%;
+    margin: auto;
+    float: none;
+  }
+  #travel,
+  #photo {
+    clear: both;
+  }
+  .skill {
+    max-width: 200px;
+  }
+  #skills p {
+    width: 80%;
+    margin: 2.5em auto;
+    text-align: left;
+  }
+  .contact {
+    clear: both;
+    max-width: 90%;
+    margin: auto;
+    padding-top: 5px;
+  }
+  .footer-menu {
+    width: 90%;
+  }
+  .footer-top {
+    display: none;
+  }
+  .footer-home,
+  .footer-portfolio,
+  .footer-skills,
+  .footer-contact {
+    display: inline-block;
+    float: right;
+    padding-left: 2em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+  .header {
+    padding-top: 20px;
+    width: 90%;
+  }
+  .header h1 {
+    width: 50%;
+    float: left;
+    text-align: left;
+  }
+  .header ul {
+    float: right;
+    width: 50%;
+    text-align: right;
+    padding-top: 1.8em;
+  }
+  .header li {
+    padding-right: 0;
+    padding-left: 1em;
+  }
+  .header p {
+    padding-left: 0;
+  }
+  .header img {
+    margin-right: 0;
+  }
+  main,
+  .header p {
+    margin: auto;
+  }
+
+  .col {
+    width: 33%;
+  }
+
+  #first,
+  #second,
+  #third {
+    width: 33%;
+  }
+  #third {
+    float: left;
+    clear: none;
+    margin: 50px auto;
+  }
+  #travel,
+  #photo {
+    clear: none;
+  }
+
+  #map {
+    clear: both;
+  }
+
+}
